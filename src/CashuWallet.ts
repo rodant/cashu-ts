@@ -384,6 +384,7 @@ class CashuWallet {
 			pubkey,
 			privkey,
 			outputData,
+			p2pk,
 		} = options || {};
 		this.assertAmount(amount, 'send');
 		if (includeDleq) {
@@ -405,7 +406,8 @@ class CashuWallet {
 				pubkey ||
 				privkey ||
 				keysetId ||
-				outputData) // these options require a swap
+				outputData ||
+				p2pk) // these options require a swap
 		) {
 			const sendRes = await this.swap(amount, proofs, options);
 			const { keep, send } = sendRes;
