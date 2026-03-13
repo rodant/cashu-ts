@@ -7,6 +7,7 @@
 
 * **amount:** add Amount value object (bigint support), AmountLike input and refactor internals ([#514](https://github.com/cashubtc/cashu-ts/issues/514)) ([cb5fd22](https://github.com/cashubtc/cashu-ts/commit/cb5fd22d7781ae44ff7a4d627bd44d47202e8f49))
 * **core:** add utility functions schnorrSignDigest, computeMessageDigest ([#515](https://github.com/cashubtc/cashu-ts/issues/515)) ([1b201c8](https://github.com/cashubtc/cashu-ts/commit/1b201c8a996215af3259a9567ef3eb098e50fc7c))
+* **request:** add nut-19 support ([#328](https://github.com/cashubtc/cashu-ts/issues/328)) ([32b4085](https://github.com/cashubtc/cashu-ts/commit/32b40855302ce51cd57f5bc8d999878e1b00e310))
 * experimental Sig_all signing package ([#485](https://github.com/cashubtc/cashu-ts/issues/485)) ([d8f33f0](https://github.com/cashubtc/cashu-ts/commit/d8f33f0d6e149b4457015d092d5fd0599aa36273))
 * **jsonint:** add bigint-safe JSON parsing and mint normalization ([#519](https://github.com/cashubtc/cashu-ts/issues/519)) ([f40fcaf](https://github.com/cashubtc/cashu-ts/commit/f40fcaf09509a35ea3be5961130bb92440ff7a7a))
 * **wallet:** add two step minting: prepareMint and completeMint ([#523](https://github.com/cashubtc/cashu-ts/issues/523)) ([39f5568](https://github.com/cashubtc/cashu-ts/commit/39f5568b577a492c375ee09b71b4a8fbc24e12ad))
