@@ -1617,6 +1617,8 @@ class CashuWallet {
 				keyset,
 				outputAmounts,
 			);
+		} else if (p2pk) {
+			outputData = OutputData.createP2PKData(p2pk, amount, keyset, outputAmounts);
 		} else if (counter || counter === 0) {
 			if (!this._seed) {
 				throw new Error('cannot create deterministic messages without seed');
@@ -1628,8 +1630,6 @@ class CashuWallet {
 				keyset,
 				outputAmounts,
 			);
-		} else if (p2pk) {
-			outputData = OutputData.createP2PKData(p2pk, amount, keyset, outputAmounts);
 		} else if (factory) {
 			const amounts = splitAmount(amount, keyset.keys);
 			outputData = amounts.map((a) => factory(a, keyset));
